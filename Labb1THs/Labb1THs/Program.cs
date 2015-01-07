@@ -13,7 +13,7 @@ namespace Laboration1TH
 
         static void Main(string[] args)
         {
-            
+
             double oresavrundning = 0;
             double totalKostnad = 0;
             int erhalletBelopp = 0;
@@ -23,16 +23,16 @@ namespace Laboration1TH
             string angeTotalsumma = "Ange totalsumma";
             string angeErhalletBelopp = "Ange erhållet belopp";
 
-            
+
             // Ger felmeddelande ifall något annat än double skrivs in
             while (true)
             {
                 try
                 {
-                    Console.Write("{0,-20}: ",angeTotalsumma);
+                    Console.Write("{0,-20}: ", angeTotalsumma);
                     inmatatTal = Console.ReadLine();
                     totalKostnad = double.Parse(inmatatTal);
-                   //Ger felmeddelande och avslutar programmet ifall totalsumman är < 0,50
+                    //Ger felmeddelande och avslutar programmet ifall totalsumman är < 0,50
                     if (totalKostnad <= 0.5)
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -58,9 +58,9 @@ namespace Laboration1TH
             {
                 try
                 {
-                    Console.Write("{0}: ",angeErhalletBelopp);
+                    Console.Write("{0}: ", angeErhalletBelopp);
                     inmatatTal = Console.ReadLine();
-                    erhalletBelopp = int.Parse(inmatatTal);                    
+                    erhalletBelopp = int.Parse(inmatatTal);
                     break;
                 }
                 catch (Exception)
