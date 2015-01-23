@@ -1,0 +1,6 @@
+c:\Projects\Labb2\Labb2\bin\Debug\Labb2.exe.config
+c:\Projects\Labb2\Labb2\bin\Debug\Labb2.exe
+c:\Projects\Labb2\Labb2\bin\Debug\Labb2.pdb
+c:\Projects\Labb2\Labb2\obj\Debug\Labb2.csprojResolveAssemblyReference.cache
+c:\Projects\Labb2\Labb2\obj\Debug\Labb2.exe
+c:\Projects\Labb2\Labb2\obj\Debug\Labb2.pdb
