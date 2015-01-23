@@ -8,15 +8,14 @@ namespace labb3
     {
         static void Main(string[] args)
         {
-
             do
             {
                 int antalLoner = 0;
-                while(true)
+                while (true)
                 {
                     antalLoner = ReadInt("Ange antal löner att mata in:");
 
-                    if(antalLoner >= 2)
+                    if (antalLoner >= 2)
                     {
                         break;
                     }
@@ -28,7 +27,7 @@ namespace labb3
                         Console.ResetColor();
                     }
                 }
-                
+
                 // nu vet du att det är minst 2 löner
                 ProcessSalaries(antalLoner);
 
@@ -37,15 +36,12 @@ namespace labb3
                 Console.BackgroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("Tryck valfri tangent för en ny beräkning - ESC avslutar.");
                 Console.ResetColor();
-                
 
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
-            Console.Clear();       
+            Console.Clear();
         }
-
         static void ProcessSalaries(int count)
         {
-
             int loneberakning = 0;
             int[] lonerad = new int[count];
 
@@ -56,22 +52,17 @@ namespace labb3
                 loneberakning = int.Parse(loner);
                 lonerad[i] = loneberakning;
             }
-            
-
             double average = lonerad.Average();
             int min = lonerad.Min();
             int max = lonerad.Max();
             int lonespridning = max - min;
-           
+
+            int[] osorteradLonerad = new int[count];
+            Array.Copy(lonerad, osorteradLonerad, count);
             Array.Sort(lonerad);
-
-
-            Console.WriteLine();
 
             Console.WriteLine();
             Console.WriteLine("----------------------");
-            Console.WriteLine("Lönespridning : {0}", lonespridning);
-            Console.WriteLine("Medellön : {0}", average);
 
             if (count % 2 == 0)
             {
@@ -79,32 +70,57 @@ namespace labb3
                 int medianNr2 = lonerad.Length / 2;
 
                 double median = (lonerad[medianNr1] + lonerad[medianNr2]) / 2.0d;
-                Console.WriteLine("Medianlön : {0}", median);
+                Console.WriteLine("Medianlön : {0,7:c0}", median);
             }
             else
             {
                 int median = lonerad.Length / 2;
-                Console.WriteLine("Medianlön: {0}", lonerad[median]);
+                Console.WriteLine("Medianlön: {0,12:c0}", lonerad[median]);
             }
 
-           
+            Console.WriteLine("Medellön : {0,12:c0}", average);
+            Console.WriteLine("Lönespridning : {0,7:c0}", lonespridning);
             Console.WriteLine("----------------------");
 
+            int rakna = 0;
 
-        
-
+            foreach (int skrivLoner in osorteradLonerad)
+            {
+                if (rakna % 3 == 0)
+                {
+                    Console.Write("\n{0,6}", skrivLoner);
+                    rakna++;
+                }
+                else
+                {
+                    Console.Write("{0,6}", skrivLoner);
+                    rakna++;
+                }
+            }
+            Console.WriteLine();
         }
 
         static int ReadInt(string prompt)
         {
             string angeAntalLoner;
 
-            Console.Write(prompt);
-            angeAntalLoner = Console.ReadLine();
-
-            Console.WriteLine();
-
-            return int.Parse(angeAntalLoner);
+            while (true)
+            {
+                try
+                {
+                    Console.Write(prompt);
+                    angeAntalLoner = Console.ReadLine();
+                    Console.WriteLine();
+                    return int.Parse(angeAntalLoner);
+                }
+                catch (Exception)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Antal löner måste vara ett heltal!");
+                    Console.ResetColor();
+                }
+            }
         }
     }
 }

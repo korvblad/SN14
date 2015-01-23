@@ -4,3 +4,9 @@ c:\Projects\Labb3\Labb3\bin\Debug\Labb3.pdb
 c:\Projects\Labb3\Labb3\obj\Debug\Labb3.csprojResolveAssemblyReference.cache
 c:\Projects\Labb3\Labb3\obj\Debug\Labb3.exe
 c:\Projects\Labb3\Labb3\obj\Debug\Labb3.pdb
+C:\Projects\SN14\Labb3\Labb3\bin\Debug\Labb3.exe.config
+C:\Projects\SN14\Labb3\Labb3\obj\Debug\Labb3.exe
+C:\Projects\SN14\Labb3\Labb3\obj\Debug\Labb3.pdb
+C:\Projects\SN14\Labb3\Labb3\bin\Debug\Labb3.exe
+C:\Projects\SN14\Labb3\Labb3\bin\Debug\Labb3.pdb
+C:\Projects\SN14\Labb3\Labb3\obj\Debug\Labb3.csprojResolveAssemblyReference.cache
