@@ -4,3 +4,6 @@ c:\Projects\Labb1THs\Labb1THs\bin\Debug\Labb1THs.pdb
 c:\Projects\Labb1THs\Labb1THs\obj\Debug\Labb1THs.exe
 c:\Projects\Labb1THs\Labb1THs\obj\Debug\Labb1THs.pdb
 C:\Projects\Labb1THs\Labb1THs\obj\Debug\Labb1THs.csprojResolveAssemblyReference.cache
+C:\Projects\SN14\Labb1THs\Labb1THs\bin\Debug\Labb1THs.exe.config
+C:\Projects\SN14\Labb1THs\Labb1THs\obj\Debug\Labb1THs.exe
+C:\Projects\SN14\Labb1THs\Labb1THs\obj\Debug\Labb1THs.pdb
