@@ -1,4 +1,4 @@
-﻿
+﻿@model System.Collections.Generic.List<int>
 @{
     Layout = null;
 }
@@ -18,11 +18,23 @@
     @using (Html.BeginForm())
     {
         @Html.ValidationSummary()
-        
+        @Html.AntiForgeryToken()
         <label for="number">Ange nytt tal</label>
         <input type="text" name="number">
         
         <button type="submit">Skicka</button>
+    }
+
+    <!--Skriv ut listan-->
+
+    @if(Model != null)
+    {
+        <ul>
+            @foreach(var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
     }
 </body>
 </html>

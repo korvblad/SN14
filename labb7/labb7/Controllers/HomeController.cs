@@ -11,26 +11,37 @@ namespace labb7.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var list = GetList();
+            return View(list);
         }
 
         [HttpPost]
-        public ActionResult Index(Nullable<int> number)
+        [ValidateAntiForgeryToken]
+        public ActionResult Index([Bind( Include ="number")]Nullable<int> number)
         {
+           // DateTime dt = (DateTime)Session["test"];
 
-            if(number.HasValue)
+            if (Session.IsNewSession)
             {
-                var list = GetList();
+                //Detta är en ny, dvs efter timeout
+                return View("SessionError"); // skapa ny vy kallad ex SessionError, där du skriver ut felet
+            }
+            var list = GetList();
+            
+
+            if(!number.HasValue)
+            {
+                ModelState.AddModelError("number", "Ange ett tal");        
+            }
+            else
+            {
                 list.Add(number.Value);
-                //Är allt ok gå vidare
-                return View(list);
-              
             }
 
-            ModelState.AddModelError("number", "Ange ett tal");
+            
 
-
-            return View();
+            //var list = GetList();
+            return View(list);
         }
 
        private List<int> GetList()
