@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h3>Gissa</h3>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        
+        <label for="number">Ange nytt tal</label>
+        <input type="text" name="number">
+        
+        <button type="submit">Skicka</button>
+    }
+</body>
+</html>

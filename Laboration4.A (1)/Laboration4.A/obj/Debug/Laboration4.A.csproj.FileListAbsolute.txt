@@ -1,0 +1,9 @@
+E:\Onedrive\Dokument\Kurser\Objektorienterad Programmering\Laborationer\Laboration4.A\Laboration4.A\bin\Debug\Laboration4.A.exe.config
+C:\Projects\Laboration4.A (1)\Laboration4.A\obj\Debug\Laboration4.A.csprojResolveAssemblyReference.cache
+C:\Projects\Laboration4.A (1)\Laboration4.A\bin\Debug\Laboration4.A.exe.config
+C:\Projects\Laboration4.A (1)\Laboration4.A\bin\Debug\Laboration4.A.exe
+C:\Projects\Laboration4.A (1)\Laboration4.A\bin\Debug\Laboration4.A.pdb
+C:\Projects\Laboration4.A (1)\Laboration4.A\bin\Debug\Laboration4.A.Utils.dll
+C:\Projects\Laboration4.A (1)\Laboration4.A\bin\Debug\Laboration4.A.Utils.pdb
+C:\Projects\Laboration4.A (1)\Laboration4.A\obj\Debug\Laboration4.A.exe
+C:\Projects\Laboration4.A (1)\Laboration4.A\obj\Debug\Laboration4.A.pdb

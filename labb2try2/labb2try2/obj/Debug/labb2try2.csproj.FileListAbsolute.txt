@@ -1,0 +1,5 @@
+c:\Projects\labb2try2\labb2try2\bin\Debug\labb2try2.exe.config
+c:\Projects\labb2try2\labb2try2\bin\Debug\labb2try2.exe
+c:\Projects\labb2try2\labb2try2\bin\Debug\labb2try2.pdb
+c:\Projects\labb2try2\labb2try2\obj\Debug\labb2try2.exe
+c:\Projects\labb2try2\labb2try2\obj\Debug\labb2try2.pdb
