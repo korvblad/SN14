@@ -1,4 +1,0 @@
-C:\Projects\Laboration4.A (1)\Laboration4.A.Utils\bin\Debug\Laboration4.A.Utils.dll
-C:\Projects\Laboration4.A (1)\Laboration4.A.Utils\bin\Debug\Laboration4.A.Utils.pdb
-C:\Projects\Laboration4.A (1)\Laboration4.A.Utils\obj\Debug\Laboration4.A.Utils.dll
-C:\Projects\Laboration4.A (1)\Laboration4.A.Utils\obj\Debug\Laboration4.A.Utils.pdb
