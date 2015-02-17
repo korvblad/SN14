@@ -1,49 +1,64 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿//using System;
+//using System.Collections;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
 
-namespace labb7
-{
-    public class SecretNumber
-    {
+//namespace labb7
+//{
+//    public class SecretNumber
+//    {
 
-        public const int MaxNumberOfGuesses = 7;
+//        public const int MaxNumberOfGuesses = 7;
 
-        private int? _number;
+        
+//        private int? _number;
+             
+             
+//        int? Number
+//        {
+//            get { return _number; }
+//            private set { _number = value; }
+//        }
 
-        int? Number
-        {
-            get { return _number; }
-            private set { _number = value; }
-        }
+//        public Outcome MakeGuess(int guess)
+//        {
+//            throw new ApplicationException();
+//        }
 
-        public Outcome MakeGuess(int guess)
-        {
-            throw new ApplicationException();
-        }
+//        public readonly bool CanMakeGuess 
+//        { 
+//            get
+//            {
+                
+                
+                
+//                //Count =  ?
+//                //    "slut på gissningar!" : "Fortsätt du gissa";
+                   
 
-        public readonly bool CanMakeGuess { get; }
+//            }
+        
+//        }
 
-        public readonly int Count { get; }
+//        public readonly int Count { get; }
 
-        private List<GuessedNumber> _guessedNumbers;
-        public readonly IList<GuessedNumber> GuessedNumbers
-        {
-            get { return _guessedNumbers; }
-        }
+//        private List<GuessedNumber> _guessedNumbers;
+//        public readonly IList<GuessedNumber> GuessedNumbers
+//        {
+//            get { return _guessedNumbers; }
+//        }
 
-        private GuessedNumber _lastGuessedNumber;
+//        private GuessedNumber _lastGuessedNumber;
 
-        public readonly GuessedNumber LastGuessedNumber
-        {
-            get { return _lastGuessedNumber; }
-        }
+//        public readonly GuessedNumber LastGuessedNumber
+//        {
+//            get { return _lastGuessedNumber; }
+//        }
 
-        public void Initialize()
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
+//        public void Initialize()
+//        {
+//            throw new NotImplementedException();
+//        }
+//    }
+//}
