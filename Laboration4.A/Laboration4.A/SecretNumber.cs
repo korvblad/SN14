@@ -39,19 +39,25 @@ namespace Laboration4.A
             if (number < _number)
             {
                 Console.WriteLine("{0} är för lågt! Du har {1} gissningar kvar!", number, guessesLeft);
+
+                if (_count == MaxNumberOfGuesses)
+                {
+                    Console.WriteLine("Det hemliga talet är {0}.", _number);
+                }
                 return false;
             }
 
             if (number > _number)
             {
                 Console.WriteLine("{0} är för högt. Du har {1} gissningar kvar.", number, guessesLeft);
+                
+                if (_count == MaxNumberOfGuesses)
+                {
+                    Console.WriteLine("Det hemliga talet är {0}.", _number);           
+                }
                 return false;
             }
-
-            if (_count == MaxNumberOfGuesses)
-            {
-                Console.WriteLine("Det hemliga talet är {0}.", _number);
-            }
+              
             Console.WriteLine("Bra Jobbat! Du klarade det på {0} försök.", _count);
             Console.WriteLine("Det hemliga talet var {0}.", _number);
             return true;
