@@ -1,6 +1,0 @@
-c:\Projects\Labb6\Labb6\bin\Debug\Labb6.exe.config
-C:\Projects\Labb6\Labb6\obj\Debug\Labb6.csprojResolveAssemblyReference.cache
-C:\Projects\Labb6\Labb6\bin\Debug\Labb6.exe
-C:\Projects\Labb6\Labb6\bin\Debug\Labb6.pdb
-C:\Projects\Labb6\Labb6\obj\Debug\Labb6.exe
-C:\Projects\Labb6\Labb6\obj\Debug\Labb6.pdb

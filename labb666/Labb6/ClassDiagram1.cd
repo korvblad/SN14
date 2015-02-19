@@ -3,16 +3,23 @@
   <Class Name="Labb6.Solid">
     <Position X="5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>CAAIAAAABACAAABEAAAIAAAAAAAAAAAAAAIACAAAAAA=</HashCode>
+      <HashCode>CAAIAAAABACgAABEAAAIAAAAAAAAAAAAAAIACAAAAAA=</HashCode>
       <FileName>Solid.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Labb6.Program">
     <Position X="0.5" Y="0.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAAAA=</HashCode>
+      <HashCode>AIAEAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Enum Name="Labb6.SolidType">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>SolidType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
