@@ -45,7 +45,7 @@
                         <h3>Du gissade rätt!</h3>
                     }
                 }
-                @if (Model.Count > 0) //Listan börjar skrivas ut här!
+                @if (Model.Count > 0) 
                 {
                     int number = 1;
                     <p>@Model.Message(Model.LastGuessedNumber.Outcome)</p>
@@ -57,7 +57,7 @@
                                 @switch (guess.Outcome)
                                 {
                                     case labb777.Models.Outcome.Right:
-                                        <div class="bg-success">&#10003;<br />@guess.Number</div>
+                                        <div class="bg-success">&#10003;<br />@guess.Number   </div>
                                         break;
                                     case labb777.Models.Outcome.High:
                                     <div class="bg-danger">&darr;<br />@guess.Number</div>
@@ -65,14 +65,16 @@
                                     case labb777.Models.Outcome.Low:
                                     <div class="bg-warning">&uarr;<br />@guess.Number</div>
                                         break;
+                                        
                                 }
                             </div>
-                                number++;
+                            number++;
+                          
                         }
 
                     </div>
-                    <div class="clearfix"></div>
-                    @Html.ActionLink("Spela igen!", "NewPage")
+                    <div class="clearfix">@Html.ActionLink("Starta om!", "NewPage")</div>
+   
                 }
                 <div class="border"></div>
                 

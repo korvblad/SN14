@@ -29,6 +29,9 @@ namespace labb777.Models
         private int? _number;
         public const int MaxNumberOfGuesses = 7;
 
+ public IReadOnlyList<GuessedNumber> GuessedNumbers 
+        { get { return _guessedNumbers.AsReadOnly(); } }
+
         public bool CanMakeGuess 
         { get { return Count < MaxNumberOfGuesses ? true : false; } }
 
@@ -38,23 +41,20 @@ namespace labb777.Models
         public GuessedNumber LastGuessedNumber 
         { get { return _lastGuessedNumber; } }
 
-        public IReadOnlyList<GuessedNumber> GuessedNumbers 
-        { get { return _guessedNumbers.AsReadOnly(); } }
-
-
-        public int? Number
-        {
-            get { return CanMakeGuess ? null : _number; }
-            private set { _number = value; }
-        }
-
-
+       
+    
         public void Initialize()
         {
             _guessedNumbers.Clear();
             _lastGuessedNumber.Outcome = Outcome.Undefined;
             Random random = new Random();
             Number = random.Next(1, 101);
+        }
+
+        public int? Number
+        {
+            get { return CanMakeGuess ? null : _number; }
+            private set { _number = value; }
         }
 
         public Outcome MakeGuess(int guess)
@@ -128,9 +128,7 @@ namespace labb777.Models
                         break;
                     case 7:
                         _guessNr = "Sista gissningen!";
-                        break;
-                   
-                  
+                        break;                                  
                 }
                 return String.Format("{0}", _guessNr);
             }

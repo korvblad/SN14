@@ -3,31 +3,13 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-/*.border
-{
-   height: 5px; 
-   margin: 8px 0 8px 0; 
-   background-color: grey;
-}*/
- 
-
 .design
 {
      background-color:#20670d;
      height:120px;
      width:100%;
+     border-radius:20px;
+    
 }
 
 .rutText
@@ -41,9 +23,28 @@ textarea {
 }
 
 
-
 .antalGissningar
 {
     background-color:#ae2525;
     color:white
+}
+
+.bg-warning
+{
+    background-color:#1ea2e4;
+}
+
+.bg-danger
+{
+    background-color:#e44e4e;
+}
+
+.bg-success
+{
+    background-color:#09b613
+}
+
+.clearfix
+{
+    margin-top:20px;
 }
