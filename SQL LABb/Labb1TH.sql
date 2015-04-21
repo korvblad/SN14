@@ -393,7 +393,7 @@ FROM Sales.SalesPerson AS SP
 GROUP BY SOH.SalesPersonID, PP.FirstName + ' ' + PP.LastName
 
 --3.15--
-
+	
 SELECT ST.Name AS 'Region'
 	, DATEPART(YEAR, SOH.OrderDate) AS 'År'
 	, SUM(SOH.SubTotal) AS 'Totalsumma'
