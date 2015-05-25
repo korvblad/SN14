@@ -1,26 +1,27 @@
 USE AdventureWorks2012;
 
 --4.0--
---***********************************
---*BACKUP DATABASE AdventureWorks2012
---*TO DISK = 'C:\MyBackups\AW_BU.bak'
---***********************************
+
+BACKUP DATABASE AdventureWorks2012
+TO DISK = 'C:\MyBackups\AW_BU.bak'
+
 
 --4.1--
 
---SELECT Lastname
---FROM Person.Person
+SELECT Lastname
+FROM Person.Person
 
---BEGIN TRANSACTION
+BEGIN TRANSACTION
 
 
---UPDATE Person.person Set LastName = 'hult'
---SELECT @@TRANCOUNT AS ActiveTransactions
+UPDATE Person.person Set LastName = 'hult'
+SELECT @@TRANCOUNT AS ActiveTransactions
 
---ROLLBACK TRANSACTION
+ROLLBACK TRANSACTION
 
 
 --4.2--
+
 CREATE TABLE [dbo].[TempCustomers]
 (
 	[ContactID] [int] NULL,
@@ -31,28 +32,28 @@ CREATE TABLE [dbo].[TempCustomers]
 )
 GO
 
---INSERT INTO TempCustomers (ContactID, FirstName, LastName, City, StateProvince)
---VALUES (1, 'Kalen', 'Delaney')
---	, (2, 'Herrman', 'Karlsson', 'Vislanda', 'Kronoberg');
+INSERT INTO TempCustomers (ContactID, FirstName, LastName, City, StateProvince)
+VALUES (1, 'Kalen', 'Delaney', 'Vislands', 'korn'),
+	 (2, 'Herrman', 'Karlsson', 'Vislanda', 'Kronoberg');
 
 
---	INSERT INTO TempCustomers (ContactID, FirstName, LastName, City)
---VALUES (3, 'Tora', 'Eriksson', 'Guldsmedshyttan')
---	, (4, 'Charlie', 'Carpenter', 'Tappström');
+	INSERT INTO TempCustomers (ContactID, FirstName, LastName, City)
+VALUES (3, 'Tora', 'Eriksson', 'Guldsmedshyttan')
+	, (4, 'Charlie', 'Carpenter', 'Tappström');
 
---SELECT ContactID
---	, FirstName
---	, LastName
---	, City
---	, StateProvince
---FROM dbo.TempCustomers,
+SELECT ContactID
+	, FirstName
+	, LastName
+	, City
+	, StateProvince
+FROM dbo.TempCustomers,
 
 --4.3--
---SELECT Name
---FROM Production.Product
+SELECT Name
+FROM Production.Product
 
---	INSERT INTO Production.Product (Name, ProductNumber, SafetyStockLevel , ReorderPoint, ListPrice, StandardCost, DaysToManufacture, SellStartDate)
---VALUES ('Racing Gizmo', 4000, 200, 8000, 666, 700, 3, 2000)
+	INSERT INTO Production.Product (Name, ProductNumber, SafetyStockLevel , ReorderPoint, ListPrice, StandardCost, DaysToManufacture, SellStartDate)
+VALUES ('Racing Gizmo', 4000, 200, 8000, 666, 700, 3, 2000)
 
 --4.4--
 --BEGIN TRANSACTION
@@ -74,7 +75,14 @@ FROM Person.Person AS P
 	JOIN Person.Address PA
 			ON BEA.AddressID=PA.AddressID
 	JOIN Person.StateProvince AS SP
-			ON PA.StateProvinceID = SP.StateProvinceID--4.5----BEGIN TRANSACTION-- Töm tabellen
+			ON PA.StateProvinceID = SP.StateProvinceID
+
+
+--4.5--
+
+--BEGIN TRANSACTION
+
+-- Töm tabellen
 -- och töm buffer och cache
 TRUNCATE TABLE dbo.TempCustomers
 GO
@@ -162,4 +170,39 @@ SET BusinessEntityID =
 
 	-- Exekvera följande två gånger
 INSERT INTO Person.BusinessEntity
-VALUES(DEFAULT, DEFAULT) 
+VALUES (DEFAULT, DEFAULT)
+
+DROP TABLE #TempTab
+
+SELECT FirstName, BusinessEntityID, ModifiedDate
+FROM Person.Person 
+WHERE ModifiedDate > '2015-03-10'
+
+--Uppgift 4.7
+UPDATE Person.Person
+SET FirstName = 'Gurra', LastName = 'Tjong'
+WHERE BusinessEntityID IN
+	(
+	SELECT BusinessEntityID
+	FROM Person.Person
+	WHERE LastName IN ('Achong', 'Acevedo')
+	)
+SELECT FirstName
+	, LastName
+FROM Person.Person
+WHERE FirstName = 'Gurra' AND LastName = 'Tjong'
+
+--Uppgift 4.8
+SELECT PP.Name
+	, PP.ListPrice * 1.1 AS NotOnSale
+FROM Production.Product AS PP
+	INNER JOIN Production.ProductSubcategory AS PS ON PS.ProductSubcategoryID = PP.ProductSubcategoryID
+WHERE PS.Name = 'Gloves'
+
+--Uppgift 4.9
+DELETE FROM TempCustomers
+WHERE LastName = 'Smith'
+
+SELECT LastName
+FROM TempCustomers
+WHERE LastName LIKE 'SM%'
