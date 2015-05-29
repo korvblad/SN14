@@ -1,0 +1,117 @@
+﻿@model Biblioteket.Models.CustomerDetails
+
+@{
+    ViewBag.Title = "CustomerDetails";
+}
+
+<h2>Kundinformation</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelephoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelephoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+
+</dl>
+    <h2>Lånade böcker</h2>
+  <dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.BookID)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.BookID)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.LoanDate)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.LoanDate)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.ReturnDate)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.ReturnDate)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.LateReturn)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.LateReturn)
+    </dd>
+
+</dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,10 @@
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\Biblioteket.Entitydata.dll.config
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\Biblioteket.Entitydata.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\Biblioteket.Entitydata.pdb
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\EntityFramework.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\EntityFramework.SqlServer.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\EntityFramework.xml
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\bin\EntityFramework.SqlServer.xml
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\obj\Debug\Biblioteket.Entitydata.csprojResolveAssemblyReference.cache
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\obj\Debug\Biblioteket.Entitydata.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Biblioteket\Biblioteket.Entitydata\obj\Debug\Biblioteket.Entitydata.pdb

@@ -1,0 +1,94 @@
+﻿@model Biblioteket.Models.CustomerList
+
+@{
+    ViewBag.Title = "DeleteCustomer";
+}
+
+<h2>DeleteCustomer</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CustomerList</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelephoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelephoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Loans)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Loans)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActiveLoans)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActiveLoans)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" disabled="@Model.ActiveLoans" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
