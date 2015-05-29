@@ -25,17 +25,11 @@ namespace labb3
 
                 
             }
-
-
-
         }
-
 
         static void ProcessSalaries(int count)
         {
          
-            
-     
         }
 
         static int ReadInt(string prompt)

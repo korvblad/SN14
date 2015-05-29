@@ -1,0 +1,8 @@
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\bin\LabbTreSql.EntityData.dll.config
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\bin\LabbTreSql.EntityData.dll
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\bin\LabbTreSql.EntityData.pdb
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\bin\EntityFramework.dll
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\bin\EntityFramework.xml
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.EntityData.dll
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.EntityData.pdb

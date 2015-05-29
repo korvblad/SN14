@@ -588,4 +588,10 @@
     <LastName>Hallgrensd</LastName>
     <Email>admin@admin.se</Email>
   </Contact>
+  <Contact>
+    <Id>00000000-0000-0000-0000-000000000000</Id>
+    <FirstName>ok</FirstName>
+    <LastName>poas</LastName>
+    <Email>a@a.xn--se-oda</Email>
+  </Contact>
 </Contacts>

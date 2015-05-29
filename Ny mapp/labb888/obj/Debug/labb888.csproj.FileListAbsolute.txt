@@ -20,3 +20,25 @@ c:\Projects\demo\labb888\labb888\bin\System.Web.Mvc.xml
 c:\Projects\demo\labb888\labb888\obj\Debug\labb888.dll
 c:\Projects\demo\labb888\labb888\obj\Debug\labb888.pdb
 C:\Projects\Demo\labb888\labb888\obj\Debug\labb888.csprojResolveAssemblyReference.cache
+C:\Projects\SN14\Ny mapp\labb888\bin\labb888.dll.config
+C:\Projects\SN14\Ny mapp\labb888\bin\labb888.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\labb888.pdb
+C:\Projects\SN14\Ny mapp\labb888\bin\EntityFramework.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\EntityFramework.SqlServer.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Helpers.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Mvc.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Razor.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.Deployment.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.Razor.dll
+C:\Projects\SN14\Ny mapp\labb888\bin\EntityFramework.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\EntityFramework.SqlServer.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Razor.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.Deployment.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Webpages.Razor.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Helpers.xml
+C:\Projects\SN14\Ny mapp\labb888\bin\System.Web.Mvc.xml
+C:\Projects\SN14\Ny mapp\labb888\obj\Debug\labb888.csprojResolveAssemblyReference.cache
+C:\Projects\SN14\Ny mapp\labb888\obj\Debug\labb888.dll
+C:\Projects\SN14\Ny mapp\labb888\obj\Debug\labb888.pdb

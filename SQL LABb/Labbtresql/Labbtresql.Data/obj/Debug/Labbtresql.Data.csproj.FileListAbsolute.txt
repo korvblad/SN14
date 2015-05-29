@@ -1,0 +1,10 @@
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\Labbtresql.Data.dll.config
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\Labbtresql.Data.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\Labbtresql.Data.pdb
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\EntityFramework.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\EntityFramework.SqlServer.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\EntityFramework.xml
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\bin\EntityFramework.SqlServer.xml
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\obj\Debug\Labbtresql.Data.csprojResolveAssemblyReference.cache
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\obj\Debug\Labbtresql.Data.dll
+c:\users\bengan\documents\visual studio 2013\Projects\Labbtresql\Labbtresql.Data\obj\Debug\Labbtresql.Data.pdb

@@ -46,7 +46,7 @@ SELECT ContactID
 	, LastName
 	, City
 	, StateProvince
-FROM dbo.TempCustomers,
+FROM dbo.TempCustomers
 
 --4.3--
 SELECT Name
@@ -178,7 +178,7 @@ SELECT FirstName, BusinessEntityID, ModifiedDate
 FROM Person.Person 
 WHERE ModifiedDate > '2015-03-10'
 
---Uppgift 4.7
+-- 4.7 --
 UPDATE Person.Person
 SET FirstName = 'Gurra', LastName = 'Tjong'
 WHERE BusinessEntityID IN
@@ -192,14 +192,14 @@ SELECT FirstName
 FROM Person.Person
 WHERE FirstName = 'Gurra' AND LastName = 'Tjong'
 
---Uppgift 4.8
+-- 4.8 --
 SELECT PP.Name
 	, PP.ListPrice * 1.1 AS NotOnSale
 FROM Production.Product AS PP
 	INNER JOIN Production.ProductSubcategory AS PS ON PS.ProductSubcategoryID = PP.ProductSubcategoryID
 WHERE PS.Name = 'Gloves'
 
---Uppgift 4.9
+-- 4.9 --
 DELETE FROM TempCustomers
 WHERE LastName = 'Smith'
 

@@ -1,0 +1,3 @@
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.Data.csprojResolveAssemblyReference.cache
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.EntityData.dll
+C:\Users\Bengan\Documents\Visual Studio 2013\Projects\Labbtresql\LabbTreSql.EntityData\obj\Debug\LabbTreSql.EntityData.pdb
